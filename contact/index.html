@@ -1,0 +1,122 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="generator" content="Primo" />
+      <!-- HEAD_svelte-du3lun_START --><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>@import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+
+#page {
+  font-family: system-ui, sans-serif;
+  color: var(--color);
+  line-height: 1.6; 
+  font-size: 1rem;
+  background: var(--background);
+}
+
+.section-container {
+  max-width: var(--max-width, 1000px);
+  margin: 0 auto;
+  padding: 3rem var(--padding, 1rem); 
+}
+
+.heading {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  margin: 0;
+}
+
+.button {
+  color: white;
+  background: var(--color-accent);
+  border-radius: 5px;
+  padding: 8px 20px;
+  transition: var(--transition);
+}
+
+.button:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  }
+
+.button.inverted {
+    background: transparent; 
+    color: var(--color-accent); 
+    border: 2px solid var(--color-accent);
+  }
+</style><!-- HEAD_svelte-du3lun_END -->
+      <style>.svelte-8ohrum.svelte-8ohrum{position:-webkit-sticky;position:sticky;top:0px}.section-container.svelte-8ohrum.svelte-8ohrum{display:flex;justify-content:space-between;align-items:center;padding-top:1rem;padding-bottom:1rem;position:-webkit-sticky;position:sticky;top:0;background-color:grey}.logo.svelte-8ohrum.svelte-8ohrum{font-size:1.5rem;font-weight:600;line-height:1.2;height:1%;width:50px}.desktop-nav.svelte-8ohrum.svelte-8ohrum{display:block;align-items:center;justify-content:space-between;width:100%;position:-webkit-sticky;position:sticky}.desktop-nav.svelte-8ohrum nav.svelte-8ohrum{display:flex;gap:2rem}.desktop-nav.svelte-8ohrum nav a.link.svelte-8ohrum{border-color:transparent;transition:border-color 0.1s;font-size:0.95rem}.desktop-nav.svelte-8ohrum nav a.link.svelte-8ohrum:hover{border-color:initial}@media(min-width: 800px){.desktop-nav.svelte-8ohrum.svelte-8ohrum{display:flex
+}}.mobile-nav.svelte-8ohrum.svelte-8ohrum{display:flex;align-items:center;justify-content:space-between;width:100%;font-weight:500}@media(min-width: 800px){.mobile-nav.svelte-8ohrum.svelte-8ohrum{display:none
+}}#popup.svelte-8ohrum.svelte-8ohrum{font-size:1.25rem;display:grid;gap:1rem;position:absolute;text-align:center;background-color:var(--background-color, white);box-shadow:var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));border-radius:var(--border-radius);inset:0.5rem;bottom:initial;padding:2rem;z-index:1}#popup.svelte-8ohrum button#close.svelte-8ohrum{position:absolute;right:1rem;top:1rem}
+.section-container.svelte-11iabjx.svelte-11iabjx{padding:4rem 1rem;position:relative}.testimonial.svelte-11iabjx.svelte-11iabjx{text-align:center;color:var(--color-inverted);background:var(--color-brand);display:grid;gap:2rem;padding:3rem 1rem 6rem 1rem;justify-content:center;border-radius:var(--border-radius);border:1px solid var(--border-color);position:relative;z-index:1;margin-bottom:1rem}@media(min-width: 700px){.testimonial.svelte-11iabjx.svelte-11iabjx{padding-inline:6rem
+}}.testimonial.svelte-11iabjx .quote.svelte-11iabjx{font-style:normal;font-weight:500;font-size:clamp(1rem, 10vw, 2rem);line-height:1.4}.testimonial.svelte-11iabjx svg.graphic{position:absolute;top:0;right:0}
+.section-container.svelte-13ipoh0.svelte-13ipoh0{display:flex;flex-direction:column;gap:2rem}.heading.svelte-13ipoh0.svelte-13ipoh0{text-align:center}ul.svelte-13ipoh0.svelte-13ipoh0{display:grid;grid-template-columns:repeat(auto-fit, minmax(15rem, 1fr));gap:1.75rem}ul.svelte-13ipoh0 li.svelte-13ipoh0{display:flex;flex-direction:column;gap:1rem;border:1px solid var(--border-color, #eee);border-radius:var(--border-radius);padding:1.5rem}ul.svelte-13ipoh0 li .title.svelte-13ipoh0{display:flex;gap:0.5rem;font-size:1.25rem;font-weight:bold;align-items:flex-start}ul.svelte-13ipoh0 li .title .label.svelte-13ipoh0{line-height:1.1;font-weight:600}</style>
+    </head>
+    <body id="page">
+       
+<div class="section svelte-8ohrum" id="section-de504344"><header class="section-container svelte-8ohrum"><div class="desktop-nav svelte-8ohrum"><a href="/" class="logo svelte-8ohrum"><img src="https://ipsaclmqpmiprnjfhuxk.supabase.co/storage/v1/object/public/images/e1e2ed6f-8363-44b6-bebd-1a7a96d8b700/1708578937140undefined.png" alt="" class="svelte-8ohrum"></a>
+    <nav class="svelte-8ohrum"><a class="link svelte-8ohrum" href="">Home</a><a class="link svelte-8ohrum" href="/about">About Us</a><a class="link svelte-8ohrum" href="/games">Contact</a></nav></div>
+  <div class="mobile-nav svelte-8ohrum"><a href="/" class="logo svelte-8ohrum"><img src="https://ipsaclmqpmiprnjfhuxk.supabase.co/storage/v1/object/public/images/e1e2ed6f-8363-44b6-bebd-1a7a96d8b700/1708578937140undefined.png" alt="" class="svelte-8ohrum"></a>
+    <button id="open" aria-label="Open mobile navigation" class="svelte-8ohrum"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="30" height="30" viewBox="0 0 24 24" class="iconify iconify--eva"><!-- HTML_TAG_START --><rect width="18" height="2" x="3" y="11" fill="currentColor" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="16" fill="currentColor" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="6" fill="currentColor" rx=".95" ry=".95"/><!-- HTML_TAG_END --></svg></button>
+    </div></header></div> 
+<div class="section" id="section-93ef4292"><section><div class="section-container svelte-11iabjx"><div class="testimonial svelte-11iabjx"><div class="quote svelte-11iabjx"><!-- HTML_TAG_START --><p>We'd love to hear from you!</p>
+<p>Whether you have feedback on Unbreaded, need support, or want to connect with us for press inquiries, here's how you can reach out</p><!-- HTML_TAG_END --></div></div></div></section></div> 
+<div class="section" id="section-622e5f0f"><section class="section-container svelte-13ipoh0"><h2 class="heading svelte-13ipoh0">Way To Contact Us
+</h2>
+  <ul class="svelte-13ipoh0"><li class="svelte-13ipoh0"><h3 class="title svelte-13ipoh0"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--color-accent, rebeccapurple)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START --><path fill="currentColor" d="m10.6 13.8l-2.15-2.15q-.275-.275-.7-.275t-.7.275q-.275.275-.275.7t.275.7L9.9 15.9q.3.3.7.3t.7-.3l5.65-5.65q.275-.275.275-.7t-.275-.7q-.275-.275-.7-.275t-.7.275zM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22"/><!-- HTML_TAG_END --></svg></span>
+          <span class="label svelte-13ipoh0">Email</span></h3>
+        <div class="description"><!-- HTML_TAG_START --><p>email@unbreadedgame.com</p><!-- HTML_TAG_END --></div>
+      </li><li class="svelte-13ipoh0"><h3 class="title svelte-13ipoh0"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--color-accent, rebeccapurple)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START --><path fill="currentColor" d="m10.6 13.8l-2.15-2.15q-.275-.275-.7-.275t-.7.275q-.275.275-.275.7t.275.7L9.9 15.9q.3.3.7.3t.7-.3l5.65-5.65q.275-.275.275-.7t-.275-.7q-.275-.275-.7-.275t-.7.275zM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22"/><!-- HTML_TAG_END --></svg></span>
+          <span class="label svelte-13ipoh0">Social Media</span></h3>
+        <div class="description"><!-- HTML_TAG_START --><p>Follow us on our social channels for updates and community discussions.</p><!-- HTML_TAG_END --></div>
+      </li><li class="svelte-13ipoh0"><h3 class="title svelte-13ipoh0"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--color-accent, rebeccapurple)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START --><path fill="currentColor" d="m10.6 13.8l-2.15-2.15q-.275-.275-.7-.275t-.7.275q-.275.275-.275.7t.275.7L9.9 15.9q.3.3.7.3t.7-.3l5.65-5.65q.275-.275.275-.7t-.275-.7q-.275-.275-.7-.275t-.7.275zM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22"/><!-- HTML_TAG_END --></svg></span>
+          <span class="label svelte-13ipoh0">Support</span></h3>
+        <div class="description"><!-- HTML_TAG_START --><p>If you're experiencing technical issues, please fill out our support form on our website.</p><!-- HTML_TAG_END --></div>
+      </li><li class="svelte-13ipoh0"><h3 class="title svelte-13ipoh0"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--color-accent, rebeccapurple)" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M20 11H4V8h16m0 7h-7v-2h7m0 6h-7v-2h7m-9 2H4v-6h7m9.33-8.33L18.67 3L17 4.67L15.33 3l-1.66 1.67L12 3l-1.67 1.67L8.67 3L7 4.67L5.33 3L3.67 4.67L2 3v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V3z"/><!-- HTML_TAG_END --></svg></span>
+          <span class="label svelte-13ipoh0">Press Kit</span></h3>
+        <div class="description"><!-- HTML_TAG_START --><p>Media professionals can download our press kit directly from [Press Kit Link].</p><!-- HTML_TAG_END --></div>
+      </li><li class="svelte-13ipoh0"><h3 class="title svelte-13ipoh0"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--color-accent, rebeccapurple)" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M18 15H6l-4 4V3a1 1 0 0 1 1-1h15a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1m5-6v14l-4-4H8a1 1 0 0 1-1-1v-1h14V8h1a1 1 0 0 1 1 1M8.19 4c-.87 0-1.57.2-2.11.59c-.52.41-.78.98-.77 1.77l.01.03h1.93c.01-.3.1-.53.28-.69a1 1 0 0 1 .66-.23c.31 0 .57.1.75.28c.18.19.26.45.26.75c0 .32-.07.59-.23.82c-.14.23-.35.43-.61.59c-.51.34-.86.64-1.05.91C7.11 9.08 7 9.5 7 10h2c0-.31.04-.56.13-.74c.09-.18.26-.36.51-.52c.45-.24.82-.53 1.11-.93c.29-.4.44-.81.44-1.31c0-.76-.27-1.37-.81-1.82C9.85 4.23 9.12 4 8.19 4M7 11v2h2v-2zm6 2h2v-2h-2zm0-9v6h2V4z"/><!-- HTML_TAG_END --></svg></span>
+          <span class="label svelte-13ipoh0">FAQs</span></h3>
+        <div class="description"><!-- HTML_TAG_START --><p>Have a question? <a href='/faq'>Our FAQ page</a> might have the answer you're looking for! </p><!-- HTML_TAG_END --></div>
+      </li></ul></section></div> 
+
+      <script type="module">
+      import('/_symbols/9db472a6-b248-4536-beee-8b286b8794b8.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-622e5f0f'),
+              hydrate: true,
+              props: {"heading":"Way To Contact Us\n","cards":[{"icon":"material-symbols:check-circle-rounded","title":"Email","description":{"html":"<p>email@unbreadedgame.com</p>","markdown":"email@unbreadedgame.com\n\n"}},{"icon":"material-symbols:check-circle-rounded","title":"Social Media","description":{"html":"<p>Follow us on our social channels for updates and community discussions.</p>","markdown":"Follow us on our social channels for updates and community discussions.\n\n"}},{"icon":"material-symbols:check-circle-rounded","title":"Support","description":{"html":"<p>If you're experiencing technical issues, please fill out our support form on our website.</p>","markdown":"If you're experiencing technical issues, please fill out our support form on our website.\n\n"}},{"icon":"mdi:newspaper","title":"Press Kit","description":{"html":"<p>Media professionals can download our press kit directly from [Press Kit Link].</p>","markdown":"Media professionals can download our press kit directly from [Press Kit Link]."}},{"icon":"mdi:frequently-asked-questions","title":"FAQs","description":{"html":"<p>Have a question? <a href='/faq'>Our FAQ page</a> might have the answer you're looking for! </p>","markdown":"Have a question? <a href='/faq'>Our FAQ page</a> might have the answer you're looking for! \n"}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/6b4c5947-bc5d-4170-a361-208e9d9ad6a6.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-de504344'),
+              hydrate: true,
+              props: {"logo":{"image":{"alt":"","url":"https://ipsaclmqpmiprnjfhuxk.supabase.co/storage/v1/object/public/images/e1e2ed6f-8363-44b6-bebd-1a7a96d8b700/1708578937140undefined.png"},"title":""},"site_nav":[{"link":{"url":"","label":"Home","active":false}},{"link":{"url":"/about","label":"About Us"}},{"link":{"url":"/games","label":"Contact"}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/211a6dca-a94e-4efd-b3b0-23abb3d95364.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-93ef4292'),
+              hydrate: true,
+              props: {"quote":{"html":"<p>We'd love to hear from you!</p>\n<p>Whether you have feedback on Unbreaded, need support, or want to connect with us for press inquiries, here's how you can reach out</p>","markdown":"We'd love to hear from you!\n\n\n\nWhether you have feedback on Unbreaded, need support, or want to connect with us for press inquiries, here's how you can reach out\n\n"},"name":"","image":{"alt":"Sam, the Founder","src":"https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80","url":"https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80","size":null}}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    </script>
+    </body>
+  </html>
+  
