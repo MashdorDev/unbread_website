@@ -2813,7 +2813,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (48:4) {#each cards as card}
+// (49:4) {#each cards as card}
 function create_each_block(ctx) {
 	let li;
 	let h3;
@@ -2876,10 +2876,10 @@ function create_each_block(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span1, "class", "label svelte-13ipoh0");
-			attr(h3, "class", "title svelte-13ipoh0");
+			attr(span1, "class", "label svelte-stv367");
+			attr(h3, "class", "title svelte-stv367");
 			attr(div, "class", "description");
-			attr(li, "class", "svelte-13ipoh0");
+			attr(li, "class", "svelte-stv367");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -2969,9 +2969,9 @@ function create_fragment(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h2, "class", "heading svelte-13ipoh0");
-			attr(ul, "class", "svelte-13ipoh0");
-			attr(section, "class", "section-container svelte-13ipoh0");
+			attr(h2, "class", "heading svelte-stv367");
+			attr(ul, "class", "svelte-stv367");
+			attr(section, "class", "section-container svelte-stv367");
 		},
 		m(target, anchor) {
 			insert_hydration(target, section, anchor);
