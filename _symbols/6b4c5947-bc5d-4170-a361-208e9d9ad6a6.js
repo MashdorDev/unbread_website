@@ -3102,7 +3102,7 @@ function create_if_block_4(ctx) {
 		h() {
 			if (!src_url_equal(img.src, img_src_value = /*logo*/ ctx[0].image.url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*logo*/ ctx[0].image.alt);
-			attr(img, "class", "svelte-1uosizs");
+			attr(img, "class", "svelte-6unsuc");
 		},
 		m(target, anchor) {
 			insert_hydration(target, img, anchor);
@@ -3167,7 +3167,7 @@ function create_each_block_1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-1uosizs");
+			attr(a, "class", "link svelte-6unsuc");
 			attr(a, "href", a_href_value = /*link*/ ctx[7].url);
 		},
 		m(target, anchor) {
@@ -3205,7 +3205,7 @@ function create_if_block_2(ctx) {
 		h() {
 			if (!src_url_equal(img.src, img_src_value = /*logo*/ ctx[0].image.url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*logo*/ ctx[0].image.alt);
-			attr(img, "class", "svelte-1uosizs");
+			attr(img, "class", "svelte-6unsuc");
 		},
 		m(target, anchor) {
 			insert_hydration(target, img, anchor);
@@ -3306,9 +3306,9 @@ function create_if_block(ctx) {
 		h() {
 			attr(button, "id", "close");
 			attr(button, "aria-label", "Close Navigation");
-			attr(button, "class", "svelte-1uosizs");
+			attr(button, "class", "svelte-6unsuc");
 			attr(nav, "id", "popup");
-			attr(nav, "class", "svelte-1uosizs");
+			attr(nav, "class", "svelte-6unsuc");
 		},
 		m(target, anchor) {
 			insert_hydration(target, nav, anchor);
@@ -3404,7 +3404,7 @@ function create_each_block(ctx) {
 		},
 		h() {
 			attr(a, "href", a_href_value = /*link*/ ctx[7].url);
-			attr(a, "class", "svelte-1uosizs");
+			attr(a, "class", "svelte-6unsuc");
 		},
 		m(target, anchor) {
 			insert_hydration(target, a, anchor);
@@ -3537,16 +3537,16 @@ function create_fragment(ctx) {
 		},
 		h() {
 			attr(a0, "href", "/");
-			attr(a0, "class", "logo svelte-1uosizs");
-			attr(nav, "class", "svelte-1uosizs");
-			attr(div0, "class", "desktop-nav svelte-1uosizs");
+			attr(a0, "class", "logo svelte-6unsuc");
+			attr(nav, "class", "svelte-6unsuc");
+			attr(div0, "class", "desktop-nav svelte-6unsuc");
 			attr(a1, "href", "/");
-			attr(a1, "class", "logo svelte-1uosizs");
+			attr(a1, "class", "logo svelte-6unsuc");
 			attr(button, "id", "open");
 			attr(button, "aria-label", "Open mobile navigation");
-			attr(button, "class", "svelte-1uosizs");
-			attr(div1, "class", "mobile-nav svelte-1uosizs");
-			attr(header, "class", "section-container svelte-1uosizs");
+			attr(button, "class", "svelte-6unsuc");
+			attr(div1, "class", "mobile-nav svelte-6unsuc");
+			attr(header, "class", "section-container svelte-6unsuc");
 		},
 		m(target, anchor) {
 			insert_hydration(target, header, anchor);
