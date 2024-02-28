@@ -3084,7 +3084,7 @@ function get_each_context_1(ctx, list, i) {
 	return child_ctx;
 }
 
-// (117:31) 
+// (116:31) 
 function create_if_block_4(ctx) {
 	let img;
 	let img_src_value;
@@ -3102,7 +3102,7 @@ function create_if_block_4(ctx) {
 		h() {
 			if (!src_url_equal(img.src, img_src_value = /*logo*/ ctx[0].image.url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*logo*/ ctx[0].image.alt);
-			attr(img, "class", "svelte-8ohrum");
+			attr(img, "class", "svelte-1rsksx0");
 		},
 		m(target, anchor) {
 			insert_hydration(target, img, anchor);
@@ -3122,7 +3122,7 @@ function create_if_block_4(ctx) {
 	};
 }
 
-// (115:6) {#if logo.title}
+// (114:6) {#if logo.title}
 function create_if_block_3(ctx) {
 	let t_value = /*logo*/ ctx[0].title + "";
 	let t;
@@ -3146,7 +3146,7 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (122:6) {#each site_nav as { link }}
+// (121:6) {#each site_nav as { link }}
 function create_each_block_1(ctx) {
 	let a;
 	let t_value = /*link*/ ctx[7].label + "";
@@ -3167,7 +3167,7 @@ function create_each_block_1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-8ohrum");
+			attr(a, "class", "link svelte-1rsksx0");
 			attr(a, "href", a_href_value = /*link*/ ctx[7].url);
 		},
 		m(target, anchor) {
@@ -3187,7 +3187,7 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (131:31) 
+// (130:31) 
 function create_if_block_2(ctx) {
 	let img;
 	let img_src_value;
@@ -3205,7 +3205,7 @@ function create_if_block_2(ctx) {
 		h() {
 			if (!src_url_equal(img.src, img_src_value = /*logo*/ ctx[0].image.url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*logo*/ ctx[0].image.alt);
-			attr(img, "class", "svelte-8ohrum");
+			attr(img, "class", "svelte-1rsksx0");
 		},
 		m(target, anchor) {
 			insert_hydration(target, img, anchor);
@@ -3225,7 +3225,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (129:6) {#if logo.title}
+// (128:6) {#if logo.title}
 function create_if_block_1(ctx) {
 	let t_value = /*logo*/ ctx[0].title + "";
 	let t;
@@ -3249,7 +3249,7 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (141:4) {#if mobileNavOpen}
+// (140:4) {#if mobileNavOpen}
 function create_if_block(ctx) {
 	let nav;
 	let t;
@@ -3306,9 +3306,9 @@ function create_if_block(ctx) {
 		h() {
 			attr(button, "id", "close");
 			attr(button, "aria-label", "Close Navigation");
-			attr(button, "class", "svelte-8ohrum");
+			attr(button, "class", "svelte-1rsksx0");
 			attr(nav, "id", "popup");
-			attr(nav, "class", "svelte-8ohrum");
+			attr(nav, "class", "svelte-1rsksx0");
 		},
 		m(target, anchor) {
 			insert_hydration(target, nav, anchor);
@@ -3382,7 +3382,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (143:8) {#each site_nav as { link }}
+// (142:8) {#each site_nav as { link }}
 function create_each_block(ctx) {
 	let a;
 	let t_value = /*link*/ ctx[7].label + "";
@@ -3404,7 +3404,7 @@ function create_each_block(ctx) {
 		},
 		h() {
 			attr(a, "href", a_href_value = /*link*/ ctx[7].url);
-			attr(a, "class", "svelte-8ohrum");
+			attr(a, "class", "svelte-1rsksx0");
 		},
 		m(target, anchor) {
 			insert_hydration(target, a, anchor);
@@ -3537,16 +3537,16 @@ function create_fragment(ctx) {
 		},
 		h() {
 			attr(a0, "href", "/");
-			attr(a0, "class", "logo svelte-8ohrum");
-			attr(nav, "class", "svelte-8ohrum");
-			attr(div0, "class", "desktop-nav svelte-8ohrum");
+			attr(a0, "class", "logo svelte-1rsksx0");
+			attr(nav, "class", "svelte-1rsksx0");
+			attr(div0, "class", "desktop-nav svelte-1rsksx0");
 			attr(a1, "href", "/");
-			attr(a1, "class", "logo svelte-8ohrum");
+			attr(a1, "class", "logo svelte-1rsksx0");
 			attr(button, "id", "open");
 			attr(button, "aria-label", "Open mobile navigation");
-			attr(button, "class", "svelte-8ohrum");
-			attr(div1, "class", "mobile-nav svelte-8ohrum");
-			attr(header, "class", "section-container svelte-8ohrum");
+			attr(button, "class", "svelte-1rsksx0");
+			attr(div1, "class", "mobile-nav svelte-1rsksx0");
+			attr(header, "class", "section-container svelte-1rsksx0");
 		},
 		m(target, anchor) {
 			insert_hydration(target, header, anchor);

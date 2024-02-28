@@ -2851,8 +2851,8 @@ function create_if_block(ctx) {
 		h() {
 			attr(img, "alt", img_alt_value = /*person*/ ctx[4].image.alt);
 			if (!src_url_equal(img.src, img_src_value = /*person*/ ctx[4].image.url)) attr(img, "src", img_src_value);
-			attr(img, "class", "svelte-1w7h1tf");
-			attr(figure, "class", "svelte-1w7h1tf");
+			attr(img, "class", "svelte-tho676");
+			attr(figure, "class", "svelte-tho676");
 		},
 		m(target, anchor) {
 			insert_hydration(target, figure, anchor);
@@ -2906,7 +2906,7 @@ function create_each_block_1(ctx) {
 		h() {
 			attr(a, "href", a_href_value = /*link*/ ctx[7].url);
 			attr(a, "aria-label", a_aria_label_value = /*link*/ ctx[7].label);
-			attr(a, "class", "svelte-1w7h1tf");
+			attr(a, "class", "svelte-tho676");
 		},
 		m(target, anchor) {
 			insert_hydration(target, a, anchor);
@@ -3028,12 +3028,12 @@ function create_each_block(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span0, "class", "name svelte-1w7h1tf");
-			attr(span1, "class", "title svelte-1w7h1tf");
-			attr(div0, "class", "details svelte-1w7h1tf");
-			attr(div1, "class", "social svelte-1w7h1tf");
+			attr(span0, "class", "name svelte-tho676");
+			attr(span1, "class", "title svelte-tho676");
+			attr(div0, "class", "details svelte-tho676");
+			attr(div1, "class", "social svelte-tho676");
 			attr(div2, "class", "info");
-			attr(li, "class", "svelte-1w7h1tf");
+			attr(li, "class", "svelte-tho676");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -3198,11 +3198,11 @@ function create_fragment(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h2, "class", "heading svelte-1w7h1tf");
-			attr(ul, "class", "cards svelte-1w7h1tf");
+			attr(h2, "class", "heading svelte-tho676");
+			attr(ul, "class", "cards svelte-tho676");
 			attr(a, "href", a_href_value = /*learn_more*/ ctx[2].url);
-			attr(div, "class", "subHeading svelte-1w7h1tf");
-			attr(section, "class", "section-container svelte-1w7h1tf");
+			attr(div, "class", "subHeading button svelte-tho676");
+			attr(section, "class", "section-container svelte-tho676");
 		},
 		m(target, anchor) {
 			insert_hydration(target, section, anchor);
