@@ -2815,6 +2815,7 @@ function get_each_context(ctx, list, i) {
 
 // (49:4) {#each cards as card}
 function create_each_block(ctx) {
+	let a;
 	let li;
 	let h3;
 	let span0;
@@ -2827,6 +2828,7 @@ function create_each_block(ctx) {
 	let div;
 	let raw_value = /*card*/ ctx[3].description.html + "";
 	let t3;
+	let a_href_value;
 	let current;
 
 	icon = new Component$1({
@@ -2840,6 +2842,7 @@ function create_each_block(ctx) {
 
 	return {
 		c() {
+			a = element("a");
 			li = element("li");
 			h3 = element("h3");
 			span0 = element("span");
@@ -2853,7 +2856,9 @@ function create_each_block(ctx) {
 			this.h();
 		},
 		l(nodes) {
-			li = claim_element(nodes, "LI", { class: true });
+			a = claim_element(nodes, "A", { href: true });
+			var a_nodes = children(a);
+			li = claim_element(a_nodes, "LI", { class: true });
 			var li_nodes = children(li);
 			h3 = claim_element(li_nodes, "H3", { class: true });
 			var h3_nodes = children(h3);
@@ -2871,8 +2876,9 @@ function create_each_block(ctx) {
 			div = claim_element(li_nodes, "DIV", { class: true });
 			var div_nodes = children(div);
 			div_nodes.forEach(detach);
-			t3 = claim_space(li_nodes);
 			li_nodes.forEach(detach);
+			t3 = claim_space(a_nodes);
+			a_nodes.forEach(detach);
 			this.h();
 		},
 		h() {
@@ -2880,9 +2886,11 @@ function create_each_block(ctx) {
 			attr(h3, "class", "title svelte-stv367");
 			attr(div, "class", "description");
 			attr(li, "class", "svelte-stv367");
+			attr(a, "href", a_href_value = /*card*/ ctx[3].link);
 		},
 		m(target, anchor) {
-			insert_hydration(target, li, anchor);
+			insert_hydration(target, a, anchor);
+			append_hydration(a, li);
 			append_hydration(li, h3);
 			append_hydration(h3, span0);
 			mount_component(icon, span0, null);
@@ -2892,7 +2900,7 @@ function create_each_block(ctx) {
 			append_hydration(li, t2);
 			append_hydration(li, div);
 			div.innerHTML = raw_value;
-			append_hydration(li, t3);
+			append_hydration(a, t3);
 			current = true;
 		},
 		p(ctx, dirty) {
@@ -2900,7 +2908,11 @@ function create_each_block(ctx) {
 			if (dirty & /*cards*/ 1) icon_changes.icon = /*card*/ ctx[3].icon;
 			icon.$set(icon_changes);
 			if ((!current || dirty & /*cards*/ 1) && t1_value !== (t1_value = /*card*/ ctx[3].title + "")) set_data(t1, t1_value);
-			if ((!current || dirty & /*cards*/ 1) && raw_value !== (raw_value = /*card*/ ctx[3].description.html + "")) div.innerHTML = raw_value;		},
+			if ((!current || dirty & /*cards*/ 1) && raw_value !== (raw_value = /*card*/ ctx[3].description.html + "")) div.innerHTML = raw_value;
+			if (!current || dirty & /*cards*/ 1 && a_href_value !== (a_href_value = /*card*/ ctx[3].link)) {
+				attr(a, "href", a_href_value);
+			}
+		},
 		i(local) {
 			if (current) return;
 			transition_in(icon.$$.fragment, local);
@@ -2911,7 +2923,7 @@ function create_each_block(ctx) {
 			current = false;
 		},
 		d(detaching) {
-			if (detaching) detach(li);
+			if (detaching) detach(a);
 			destroy_component(icon);
 		}
 	};
