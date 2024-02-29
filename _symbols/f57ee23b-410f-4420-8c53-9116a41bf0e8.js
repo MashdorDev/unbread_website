@@ -1,4 +1,4 @@
-// Footer Form - Updated February 28, 2024
+// Footer Form - Updated February 29, 2024
 function noop() { }
 function assign(tar, src) {
     // @ts-ignore
@@ -2868,10 +2868,10 @@ function create_each_block(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "icon svelte-198w62c");
-			attr(span0, "class", "title svelte-198w62c");
-			attr(span1, "class", "description svelte-198w62c");
-			attr(div1, "class", "card svelte-198w62c");
+			attr(div0, "class", "icon svelte-1d4xhcz");
+			attr(span0, "class", "title svelte-1d4xhcz");
+			attr(span1, "class", "description svelte-1d4xhcz");
+			attr(div1, "class", "card svelte-1d4xhcz");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div1, anchor);
@@ -3013,19 +3013,19 @@ function create_fragment(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h2, "class", "heading svelte-198w62c");
+			attr(h2, "class", "heading svelte-1d4xhcz");
 			attr(input, "type", "email");
 			attr(input, "placeholder", input_placeholder_value = /*form*/ ctx[0].placeholder);
-			attr(input, "class", "svelte-198w62c");
+			attr(input, "class", "svelte-1d4xhcz");
 			attr(button, "type", "button");
-			attr(button, "class", "svelte-198w62c");
+			attr(button, "class", "svelte-1d4xhcz");
 			attr(form_1, "action", "");
-			attr(form_1, "class", "svelte-198w62c");
-			attr(span, "class", "footer svelte-198w62c");
-			attr(div0, "class", "signup svelte-198w62c");
-			attr(div1, "class", "cards svelte-198w62c");
-			attr(div2, "class", "section-container svelte-198w62c");
-			attr(section, "class", "svelte-198w62c");
+			attr(form_1, "class", "svelte-1d4xhcz");
+			attr(span, "class", "footer svelte-1d4xhcz");
+			attr(div0, "class", "signup svelte-1d4xhcz");
+			attr(div1, "class", "cards svelte-1d4xhcz");
+			attr(div2, "class", "section-container svelte-1d4xhcz");
+			attr(section, "class", "svelte-1d4xhcz");
 		},
 		m(target, anchor) {
 			insert_hydration(target, section, anchor);

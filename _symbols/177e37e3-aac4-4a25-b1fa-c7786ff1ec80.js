@@ -1,4 +1,4 @@
-// Featured People 2 - Updated February 28, 2024
+// Featured People 2 - Updated February 29, 2024
 function noop() { }
 function assign(tar, src) {
     // @ts-ignore
@@ -2894,6 +2894,7 @@ function create_each_block_1(ctx) {
 			a = claim_element(nodes, "A", {
 				href: true,
 				"aria-label": true,
+				target: true,
 				class: true
 			});
 
@@ -2906,6 +2907,7 @@ function create_each_block_1(ctx) {
 		h() {
 			attr(a, "href", a_href_value = /*link*/ ctx[6].url);
 			attr(a, "aria-label", a_aria_label_value = /*link*/ ctx[6].label);
+			attr(a, "target", "_blank");
 			attr(a, "class", "svelte-is93z9");
 		},
 		m(target, anchor) {
