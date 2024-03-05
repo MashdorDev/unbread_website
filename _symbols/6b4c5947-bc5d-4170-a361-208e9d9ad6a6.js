@@ -1287,7 +1287,7 @@ function create_if_block_3(ctx) {
 		h() {
 			if (!src_url_equal(img.src, img_src_value = /*logo*/ ctx[0].image.url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*logo*/ ctx[0].image.alt);
-			attr(img, "class", "svelte-eek00w");
+			attr(img, "class", "svelte-drcxvs");
 		},
 		m(target, anchor) {
 			insert_hydration(target, img, anchor);
@@ -1349,7 +1349,7 @@ function create_if_block_1(ctx) {
 		h() {
 			if (!src_url_equal(img.src, img_src_value = /*logo*/ ctx[0].small_icon.url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*logo*/ ctx[0].small_icon.alt);
-			attr(img, "class", "svelte-eek00w");
+			attr(img, "class", "svelte-drcxvs");
 		},
 		m(target, anchor) {
 			insert_hydration(target, img, anchor);
@@ -1414,7 +1414,7 @@ function create_each_block(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-eek00w");
+			attr(a, "class", "link svelte-drcxvs");
 			attr(a, "href", a_href_value = /*link*/ ctx[5].url);
 		},
 		m(target, anchor) {
@@ -1622,36 +1622,36 @@ function create_fragment(ctx) {
 		},
 		h() {
 			attr(a0, "href", "/");
-			attr(a0, "class", "logo svelte-eek00w");
+			attr(a0, "class", "logo svelte-drcxvs");
 			attr(input, "type", "checkbox");
 			attr(input, "id", "active");
-			attr(input, "class", "svelte-eek00w");
-			attr(span, "class", "svelte-eek00w");
+			attr(input, "class", "svelte-drcxvs");
+			attr(span, "class", "svelte-drcxvs");
 			attr(label0, "for", "active");
-			attr(label0, "class", "menu-btn svelte-eek00w");
+			attr(label0, "class", "menu-btn svelte-drcxvs");
 			attr(label1, "for", "active");
-			attr(label1, "class", "close svelte-eek00w");
+			attr(label1, "class", "close svelte-drcxvs");
 			attr(a1, "href", "/");
-			attr(a1, "class", "logo svelte-eek00w");
+			attr(a1, "class", "logo svelte-drcxvs");
 			attr(a2, "href", "www.dorzairi.com");
-			attr(a2, "class", "svelte-eek00w");
-			attr(li0, "class", "svelte-eek00w");
+			attr(a2, "class", "svelte-drcxvs");
+			attr(li0, "class", "svelte-drcxvs");
 			attr(a3, "href", "www.dorzairi.com");
-			attr(a3, "class", "svelte-eek00w");
-			attr(li1, "class", "svelte-eek00w");
+			attr(a3, "class", "svelte-drcxvs");
+			attr(li1, "class", "svelte-drcxvs");
 			attr(a4, "href", "www.dorzairi.com");
-			attr(a4, "class", "svelte-eek00w");
-			attr(li2, "class", "svelte-eek00w");
+			attr(a4, "class", "svelte-drcxvs");
+			attr(li2, "class", "svelte-drcxvs");
 			attr(a5, "href", "www.dorzairi.com");
-			attr(a5, "class", "svelte-eek00w");
-			attr(li3, "class", "svelte-eek00w");
+			attr(a5, "class", "svelte-drcxvs");
+			attr(li3, "class", "svelte-drcxvs");
 			attr(a6, "href", "www.dorzairi.com");
-			attr(a6, "class", "svelte-eek00w");
-			attr(li4, "class", "svelte-eek00w");
-			attr(ul, "class", "svelte-eek00w");
-			attr(nav, "class", "svelte-eek00w");
-			attr(div, "class", "wrapper svelte-eek00w");
-			attr(header, "class", "section-container svelte-eek00w");
+			attr(a6, "class", "svelte-drcxvs");
+			attr(li4, "class", "svelte-drcxvs");
+			attr(ul, "class", "svelte-drcxvs");
+			attr(nav, "class", "svelte-drcxvs");
+			attr(div, "class", "wrapper svelte-drcxvs");
+			attr(header, "class", "section-container svelte-drcxvs");
 		},
 		m(target, anchor) {
 			insert_hydration(target, header, anchor);
