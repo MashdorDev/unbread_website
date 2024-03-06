@@ -1261,7 +1261,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (67:6) {#each site_nav as { link }}
+// (77:6) {#each site_nav as { link }}
 function create_each_block(ctx) {
 	let a;
 	let li;
@@ -1290,7 +1290,7 @@ function create_each_block(ctx) {
 			this.h();
 		},
 		h() {
-			attr(li, "class", "svelte-7u46sh");
+			attr(li, "class", "svelte-1pnelih");
 			attr(a, "class", "link");
 			attr(a, "href", a_href_value = /*link*/ ctx[5].url);
 		},
@@ -1335,7 +1335,7 @@ function create_fragment(ctx) {
 			this.h();
 		},
 		l(nodes) {
-			header = claim_element(nodes, "HEADER", {});
+			header = claim_element(nodes, "HEADER", { class: true });
 			var header_nodes = children(header);
 			ul = claim_element(header_nodes, "UL", { class: true });
 			var ul_nodes = children(ul);
@@ -1349,7 +1349,8 @@ function create_fragment(ctx) {
 			this.h();
 		},
 		h() {
-			attr(ul, "class", "menu-bar svelte-7u46sh");
+			attr(ul, "class", "menu-bar svelte-1pnelih");
+			attr(header, "class", "nav svelte-1pnelih");
 		},
 		m(target, anchor) {
 			insert_hydration(target, header, anchor);
