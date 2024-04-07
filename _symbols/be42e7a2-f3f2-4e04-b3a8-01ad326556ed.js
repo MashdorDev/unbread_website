@@ -2867,7 +2867,7 @@ function create_each_block_2(ctx) {
 		},
 		h() {
 			attr(a, "class", "icon svelte-5j33b4");
-			attr(a, "href", a_href_value = /*link*/ ctx[8]);
+			attr(a, "href", a_href_value = /*link*/ ctx[8].url);
 			attr(a, "aria-label", a_aria_label_value = /*link*/ ctx[8].label);
 			attr(a, "target", "_blank");
 		},
@@ -2882,7 +2882,7 @@ function create_each_block_2(ctx) {
 			if (dirty & /*teams*/ 1) icon_changes.icon = /*icon*/ ctx[9];
 			icon.$set(icon_changes);
 
-			if (!current || dirty & /*teams*/ 1 && a_href_value !== (a_href_value = /*link*/ ctx[8])) {
+			if (!current || dirty & /*teams*/ 1 && a_href_value !== (a_href_value = /*link*/ ctx[8].url)) {
 				attr(a, "href", a_href_value);
 			}
 
