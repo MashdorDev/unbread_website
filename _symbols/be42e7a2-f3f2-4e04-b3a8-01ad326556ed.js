@@ -1,4 +1,4 @@
-// AboutUs team - Updated April 7, 2024
+// AboutUs team - Updated April 9, 2024
 function noop() { }
 function assign(tar, src) {
     // @ts-ignore
@@ -2834,7 +2834,7 @@ function get_each_context_2(ctx, list, i) {
 	return child_ctx;
 }
 
-// (125:16) {#each member.social_media as {link, icon}}
+// (143:16) {#each member.social_media as {link, icon}}
 function create_each_block_2(ctx) {
 	let a;
 	let icon;
@@ -2866,7 +2866,7 @@ function create_each_block_2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "icon svelte-5j33b4");
+			attr(a, "class", "icon svelte-1akbvdn");
 			attr(a, "href", a_href_value = /*link*/ ctx[8].url);
 			attr(a, "aria-label", a_aria_label_value = /*link*/ ctx[8].label);
 			attr(a, "target", "_blank");
@@ -2906,7 +2906,7 @@ function create_each_block_2(ctx) {
 	};
 }
 
-// (121:10) {#each team.members as member}
+// (139:10) {#each team.members as member}
 function create_each_block_1(ctx) {
 	let div2;
 	let img;
@@ -2987,11 +2987,11 @@ function create_each_block_1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(img, "class", "member-profile svelte-5j33b4");
+			attr(img, "class", "member-profile svelte-1akbvdn");
 			if (!src_url_equal(img.src, img_src_value = /*member*/ ctx[5].profile_img.url)) attr(img, "src", img_src_value);
-			attr(div0, "class", "social svelte-5j33b4");
-			attr(div1, "class", "member-info svelte-5j33b4");
-			attr(div2, "class", "member-item svelte-5j33b4");
+			attr(div0, "class", "social svelte-1akbvdn");
+			attr(div1, "class", "member-info svelte-1akbvdn");
+			attr(div2, "class", "member-item svelte-1akbvdn");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -3075,7 +3075,7 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (113:4) {#each teams as team}
+// (131:4) {#each teams as team}
 function create_each_block(ctx) {
 	let aside;
 	let div0;
@@ -3133,10 +3133,10 @@ function create_each_block(ctx) {
 		},
 		h() {
 			if (!src_url_equal(img.src, img_src_value = /*team*/ ctx[2].icon.url)) attr(img, "src", img_src_value);
-			attr(img, "class", "svelte-5j33b4");
-			attr(div0, "class", "team-icon svelte-5j33b4");
-			attr(div1, "class", "members-box svelte-5j33b4");
-			attr(aside, "class", "team-box svelte-5j33b4");
+			attr(img, "class", "svelte-1akbvdn");
+			attr(div0, "class", "team-icon svelte-1akbvdn");
+			attr(div1, "class", "members-box svelte-1akbvdn");
+			attr(aside, "class", "team-box svelte-1akbvdn");
 		},
 		m(target, anchor) {
 			insert_hydration(target, aside, anchor);
@@ -3263,9 +3263,9 @@ function create_fragment(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h2, "class", "title svelte-5j33b4");
-			attr(div, "class", "container svelte-5j33b4");
-			attr(section, "class", "teams svelte-5j33b4");
+			attr(h2, "class", "title svelte-1akbvdn");
+			attr(div, "class", "container svelte-1akbvdn");
+			attr(section, "class", "teams svelte-1akbvdn");
 		},
 		m(target, anchor) {
 			insert_hydration(target, section, anchor);

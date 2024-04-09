@@ -1,4 +1,4 @@
-// Site Footer - Updated April 7, 2024
+// Site Footer - Updated April 9, 2024
 function noop() { }
 function assign(tar, src) {
     // @ts-ignore
@@ -2820,7 +2820,7 @@ function get_each_context_1(ctx, list, i) {
 	return child_ctx;
 }
 
-// (64:4) {#each nav as { link }}
+// (63:4) {#each nav as { link }}
 function create_each_block_1(ctx) {
 	let a;
 	let t_value = /*link*/ ctx[3].label + "";
@@ -2841,7 +2841,7 @@ function create_each_block_1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-yko7hx");
+			attr(a, "class", "link svelte-1a9un1t");
 			attr(a, "href", a_href_value = /*link*/ ctx[3].url);
 		},
 		m(target, anchor) {
@@ -2861,7 +2861,7 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (70:4) {#each social as { link, icon }}
+// (69:4) {#each social as { link, icon }}
 function create_each_block(ctx) {
 	let a;
 	let icon;
@@ -2869,7 +2869,10 @@ function create_each_block(ctx) {
 	let a_href_value;
 	let a_aria_label_value;
 	let current;
-	icon = new Component$1({ props: { icon: /*icon*/ ctx[4] } });
+
+	icon = new Component$1({
+			props: { icon: /*icon*/ ctx[4], color: "#713B26" }
+		});
 
 	return {
 		c() {
@@ -2894,7 +2897,7 @@ function create_each_block(ctx) {
 		h() {
 			attr(a, "href", a_href_value = /*link*/ ctx[3].url);
 			attr(a, "aria-label", a_aria_label_value = /*link*/ ctx[3].label);
-			attr(a, "class", "svelte-yko7hx");
+			attr(a, "class", "svelte-1a9un1t");
 		},
 		m(target, anchor) {
 			insert_hydration(target, a, anchor);
@@ -2997,9 +3000,9 @@ function create_fragment(ctx) {
 			this.h();
 		},
 		h() {
-			attr(nav_1, "class", "svelte-yko7hx");
-			attr(div, "class", "social-links svelte-yko7hx");
-			attr(footer, "class", "section-container svelte-yko7hx");
+			attr(nav_1, "class", "svelte-1a9un1t");
+			attr(div, "class", "social-links svelte-1a9un1t");
+			attr(footer, "class", "section-container svelte-1a9un1t");
 		},
 		m(target, anchor) {
 			insert_hydration(target, footer, anchor);
