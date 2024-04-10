@@ -1,4 +1,4 @@
-// Site Nav - Updated April 9, 2024
+// Site Nav - Updated April 10, 2024
 function noop() { }
 function assign(tar, src) {
     // @ts-ignore
@@ -2813,7 +2813,7 @@ function get_each_context_1(ctx, list, i) {
 // (62:4) {#if isMobileNavOpen}
 function create_if_block(ctx) {
 	let ul;
-	let each_value_1 = /*site_nav*/ ctx[0];
+	let each_value_1 = /*site_nav*/ ctx[1];
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value_1.length; i += 1) {
@@ -2854,8 +2854,8 @@ function create_if_block(ctx) {
 			}
 		},
 		p(ctx, dirty) {
-			if (dirty & /*site_nav*/ 1) {
-				each_value_1 = /*site_nav*/ ctx[0];
+			if (dirty & /*site_nav*/ 2) {
+				each_value_1 = /*site_nav*/ ctx[1];
 				let i;
 
 				for (i = 0; i < each_value_1.length; i += 1) {
@@ -2918,9 +2918,9 @@ function create_each_block_1(ctx) {
 			append_hydration(a, t);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*site_nav*/ 1 && t_value !== (t_value = /*link*/ ctx[5].label + "")) set_data(t, t_value);
+			if (dirty & /*site_nav*/ 2 && t_value !== (t_value = /*link*/ ctx[5].label + "")) set_data(t, t_value);
 
-			if (dirty & /*site_nav*/ 1 && a_href_value !== (a_href_value = /*link*/ ctx[5].url)) {
+			if (dirty & /*site_nav*/ 2 && a_href_value !== (a_href_value = /*link*/ ctx[5].url)) {
 				attr(a, "href", a_href_value);
 			}
 		},
@@ -2964,9 +2964,9 @@ function create_each_block(ctx) {
 			append_hydration(a, t);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*site_nav*/ 1 && t_value !== (t_value = /*link*/ ctx[5].label + "")) set_data(t, t_value);
+			if (dirty & /*site_nav*/ 2 && t_value !== (t_value = /*link*/ ctx[5].label + "")) set_data(t, t_value);
 
-			if (dirty & /*site_nav*/ 1 && a_href_value !== (a_href_value = /*link*/ ctx[5].url)) {
+			if (dirty & /*site_nav*/ 2 && a_href_value !== (a_href_value = /*link*/ ctx[5].url)) {
 				attr(a, "href", a_href_value);
 			}
 		},
@@ -2990,14 +2990,14 @@ function create_fragment(ctx) {
 
 	icon = new Component$1({
 			props: {
-				icon: /*burger*/ ctx[1],
+				icon: /*burger*/ ctx[0],
 				width: "1.5rem",
 				height: "1.5rem"
 			}
 		});
 
 	let if_block = /*isMobileNavOpen*/ ctx[2] && create_if_block(ctx);
-	let each_value = /*site_nav*/ ctx[0];
+	let each_value = /*site_nav*/ ctx[1];
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value.length; i += 1) {
@@ -3076,7 +3076,7 @@ function create_fragment(ctx) {
 		},
 		p(ctx, [dirty]) {
 			const icon_changes = {};
-			if (dirty & /*burger*/ 2) icon_changes.icon = /*burger*/ ctx[1];
+			if (dirty & /*burger*/ 1) icon_changes.icon = /*burger*/ ctx[0];
 			icon.$set(icon_changes);
 
 			if (/*isMobileNavOpen*/ ctx[2]) {
@@ -3092,8 +3092,8 @@ function create_fragment(ctx) {
 				if_block = null;
 			}
 
-			if (dirty & /*site_nav*/ 1) {
-				each_value = /*site_nav*/ ctx[0];
+			if (dirty & /*site_nav*/ 2) {
+				each_value = /*site_nav*/ ctx[1];
 				let i;
 
 				for (i = 0; i < each_value.length; i += 1) {
@@ -3137,8 +3137,8 @@ function create_fragment(ctx) {
 
 function instance($$self, $$props, $$invalidate) {
 	let { props } = $$props;
-	let { site_nav } = $$props;
 	let { burger } = $$props;
+	let { site_nav } = $$props;
 	let isMobileNavOpen = false;
 
 	function onBurgerClick() {
@@ -3147,17 +3147,17 @@ function instance($$self, $$props, $$invalidate) {
 
 	$$self.$$set = $$props => {
 		if ('props' in $$props) $$invalidate(4, props = $$props.props);
-		if ('site_nav' in $$props) $$invalidate(0, site_nav = $$props.site_nav);
-		if ('burger' in $$props) $$invalidate(1, burger = $$props.burger);
+		if ('burger' in $$props) $$invalidate(0, burger = $$props.burger);
+		if ('site_nav' in $$props) $$invalidate(1, site_nav = $$props.site_nav);
 	};
 
-	return [site_nav, burger, isMobileNavOpen, onBurgerClick, props];
+	return [burger, site_nav, isMobileNavOpen, onBurgerClick, props];
 }
 
 class Component extends SvelteComponent {
 	constructor(options) {
 		super();
-		init(this, options, instance, create_fragment, safe_not_equal, { props: 4, site_nav: 0, burger: 1 });
+		init(this, options, instance, create_fragment, safe_not_equal, { props: 4, burger: 0, site_nav: 1 });
 	}
 }
 
